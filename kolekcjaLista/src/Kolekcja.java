@@ -15,7 +15,24 @@ public class Kolekcja {
         //wyswietlenie ArrayList
         System.out.println("--------------");
         for (Object o : arr) {
-            System.out.println(((Animal)o).name);
+            System.out.println(((Animal) o).name);
+        }
+        System.out.println("--------------");
+
+        System.out.println(((Animal) arr.get(0)).name);
+        System.out.println("Wielkosc listy: " + arr.size());
+        System.out.println("Sprawdzamy czy obiekt znajduje sie na liscie: " + arr.contains(kot1));
+        //usuniecie obiektu kot2
+        arr.remove(kot2);
+        //usuniecie indexu 0
+        arr.remove(0);
+        //czyszczenie listy
+        arr.clear();
+        System.out.println(arr.size());
+
+        System.out.println("--------------");
+        for (Object o : arr) {
+            System.out.println(((Animal) o).name);
         }
         System.out.println("--------------");
 
