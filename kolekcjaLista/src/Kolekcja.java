@@ -36,5 +36,18 @@ public class Kolekcja {
         }
         System.out.println("--------------");
 
+        //Lista tworzona generycznie
+        ArrayList<Animal> arrG = new ArrayList<>();
+        arrG.add(kot1);
+        arrG.add(kot2);
+        arrG.add(kot3);
+
+        System.out.println("-----------");
+        for (Animal o : arrG){
+            System.out.println(o.name);
+        }
+        System.out.println("-----------");
+
+        System.out.println((arrG.get(0)).name);
     }
 }
