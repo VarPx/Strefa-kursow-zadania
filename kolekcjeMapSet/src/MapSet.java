@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
 public class MapSet {
@@ -29,5 +31,21 @@ public class MapSet {
         for (String m : map.values()) {
             System.out.println(m);
         }
+
+        System.out.println("\nHashSet");
+        System.out.println("LinkedHashSet");
+        //HashSet - zbior nie pamieta kolejnosc
+        //LinkedHashSet - zbior ktory pamieta kolejnosc dodawania
+        LinkedHashSet<String> zbior = new LinkedHashSet<>();
+        zbior.add("Zielona Wies");
+        zbior.add("Poznan");
+        zbior.add("Zielona Wies");
+        zbior.add("Zielona Wies");
+        zbior.add("Warszawa");
+
+        for (String z : zbior) {
+            System.out.println(z);
+        }
+        System.out.println(zbior.size());
     }
 }
