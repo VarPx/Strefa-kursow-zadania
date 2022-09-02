@@ -13,6 +13,7 @@ public class Main {
 
     //funkcja
     public static void change(int[] x) {
+        x = new int[1];
         x[0] = 0;
         x[0]--;
         System.out.println("Zmienna x = " + x[0]);
