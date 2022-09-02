@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println(add(5));
-        System.out.println(add(5F));
+        System.out.println(add(5.0F));
         System.out.println(add(10, 2));
     }
 
-    public static float add(float a) {
-        return --a;
+    public static int add(float a) {
+        return (int)--a;
     }
 
     public static int add(int a) {
